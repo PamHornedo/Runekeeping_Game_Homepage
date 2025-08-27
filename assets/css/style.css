@@ -96,7 +96,7 @@ a {
   margin-right: 100px;
   margin-top: 50px;
   margin-bottom: 50px;
-  text-align: center;
+  text-align: left;
   align-items: center;
 }
 
@@ -116,12 +116,10 @@ a {
 }
 
 .runes {
-  width: 500px;
+  margin: 10px;
+  width: 50%;
+  min-width: 700px;
   height: 150px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 50px;
-  margin-bottom: 50px;
   align-content: center;
   border: solid #ffcc02 5px;
   border-radius: 5px;
@@ -139,12 +137,10 @@ a {
 
 .container {
   display: flex;
-  flex-grow: 4;
+  flex-wrap: wrap;
   border-left: solid #ffcc02 5px;
-  padding: 40px;
-  margin: 10px;
+  padding-left: 50px;
 }
-
 .Contact {
   border: solid #ffcc02;
   border-radius: 5px;
