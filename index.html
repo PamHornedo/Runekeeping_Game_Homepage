@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finn the Flamekeeper's Runekeeping</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -16,83 +17,74 @@
         <a href="#Send">Send a Raven</a>
       </nav>
     </header>
-    <section id="section-1">
-      <aside id="finn">
-        <div>
-          <img
-            src="assets/images/finn.png"
-            id="flamekeeper"
-            alt="Finn the Flamekeeper"
-          />
-        </div>
+    <section>
+      <div class="Finn">
+        <img
+          src="assets/images/finn.png"
+          id="flamekeeper"
+          alt="Finn the Flamekeeper"
+        />
         <p id="name">Finn the Flamekeeper</p>
-        <p>Full-Stack Dragon Developer</p>
-      </aside>
+        <p id="job">Full-Stack Dragon Developer</p>
+      </div>
       <main id="Legend">
-        <p>
-          Forged in the fire of forgotten frameworks, Finn is a mythical
-          full-stack dragon developer whose claws type in JavaScript and wings
-          deploy React apps with ease. Known across the realms for his fierce
-          debugging and pixel-perfect firebreath.
-        </p>
-        <br />
-        <p>
-          With a heart as warm as his flames, Finn is on a quest to master the
-          ancient runes of coding. Join him in his adventures through the
-          mystical lands of web development, where every line of code is a step
-          towards unlocking the secrets of the digital universe.
-        </p>
-        <br />
-        <p>
-          Whether he's soaring through the skies of cloud computing or diving
-          into the depths of database dungeons, Finn's journey is one of
-          discovery, innovation, and a touch of dragon magic. Follow his path to
-          become a legendary coder in your own right!
-        </p>
+        <div>
+          <p>
+            Forged in the fire of forgotten frameworks, Finn is a mythical
+            full-stack dragon developer whose claws type in JavaScript and wings
+            deploy React apps with ease. Known across the realms for his fierce
+            debugging and pixel-perfect firebreath.
+          </p>
+          <br />
+          <p>
+            With a heart as warm as his flames, Finn is on a quest to master the
+            ancient runes of coding. Join him in his adventures through the
+            mystical lands of web development, where every line of code is a
+            step towards unlocking the secrets of the digital universe.
+          </p>
+          <br />
+          <p>
+            Whether he's soaring through the skies of cloud computing or diving
+            into the depths of database dungeons, Finn's journey is one of
+            discovery, innovation, and a touch of dragon magic. Follow his path
+            to become a legendary coder in your own right!
+          </p>
+        </div>
       </main>
     </section>
-    <section id="section-2">
-      <aside>
-        <h2 id="Runes">RUNES OF POWER</h2>
-      </aside>
-      <main class="container">
-        <!--<p class="runes" id="rune1">Rune1</p>
-        <p class="runes" id="2">Rune2</p>
-        <p class="runes" id="3">Rune3</p>
-        <p class="runes" id="4">Rune4</p>
-        <p class="runes" id="5">Rune5</p>
-      -->
-        <div><img src="assets/images/rune1.jpg" class="runes" alt="" /></div>
-        <div><img src="assets/images/rune2.jpg" class="runes" alt="" /></div>
-        <div><img src="assets/images/rune3.jpg" class="runes" alt="" /></div>
-        <div><img src="assets/images/rune4.jpg" class="runes" alt="" /></div>
-        <div><img src="assets/images/rune5.jpg" class="runes" alt="" /></div>
+    <section>
+      <h2 id="Runes">RUNES OF POWER</h2>
+      <main class="flex-container">
+        <div class="flex-item rune1"></div>
+        <div class="flex-item rune2"></div>
+        <div class="flex-item rune3"></div>
+        <div class="flex-item rune4"></div>
+        <div class="flex-item rune5"></div>
       </main>
     </section>
-    <section id="section-3">
+    <section>
       <aside>
-        <p id="Directions-1">Directions to play Finn's Runekeeping</p>
+        <p id="Directions">Directions to play Finn's Runekeeping</p>
       </aside>
       <main>
-        <p id="Directions-2">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
-          harum. Vero sed, molestias quae perspiciatis ipsa quia quisquam
-          voluptate, blanditiis neque pariatur eum provident corporis error
-          soluta voluptatibus esse. Eos?
-        </p>
+        <div>
+          <p class="enter">
+            To embark on your journey with Finn, simply click 'Enter'. This will
+            summon Finn to guide you through the world of runes and coding
+            adventures.
+          </p>
+        </div>
       </main>
     </section>
-    <section id="section-4">
-      <aside>
-        <p id="Send">SEND A RAVEN</p>
-      </aside>
-      <main class="container">
-        <p id="devs">Contact the devs!</p>
-        <p class="Contact">123.456.7890</p>
-        <p class="Contact">finn@dragon.dev</p>
-        <p class="Contact">DrakeHub</p>
-        <p class="Contact">TalonNet</p>
-        <p class="Contact">Flameify</p>
+    <section>
+      <p id="Send">SEND A RAVEN</p>
+      <main class="flex-container">
+        <div class="flex-item devs">Contact the devs!</div>
+        <div class="flex-item contact">123.456.7890</div>
+        <div class="flex-item contact">finn@dragon.dev</div>
+        <div class="flex-item contact">DrakeHub</div>
+        <div class="flex-item contact">TalonNet</div>
+        <div class="flex-item contact">Flameify</div>
       </main>
     </section>
   </body>

@@ -31,122 +31,130 @@ body {
 }
 
 header {
-  background-color: var(--dark);
   display: flex;
+  background-color: #000000;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  text-align: center;
+  padding: 25px;
 }
 
 h1 {
-  border: solid #ffcc02;
   background-color: #ffcc02;
   color: #000000;
+  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: solid #ffcc02;
   border-radius: 5px;
 }
 
-a {
-  text-decoration: none;
-  font-weight: bold;
+nav {
   color: #ffcc02;
-  font-size: 20px;
-  padding: 15px;
+  font-weight: bold;
+  align-content: center;
 }
 
-#section-1,
-#section-2,
-#section-3,
-#section-4 {
+a{
+  padding: 20px;
+  text-decoration: none;
+  color: #ffcc02;
+}
+
+section {
   display: flex;
   justify-content: space-between;
 }
 
-#finn {
-  align-items: center;
-  text-align: center;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+.Finn {
+display: flex inline-block;
+flex-direction: column;
+text-align: center;
+width: 50%;
+margin: auto;
+padding: 50px;
 }
 
-#name {
+#name{
   font-weight: bold;
   font-size: 18px;
 }
 
-#Legend {
-  margin: 50px;
-  padding-left: 65px;
-  padding-right: 65px;
-  padding-bottom: 25px;
+#job{
   font-size: 16px;
 }
 
-#flamekeeper {
-  width: 35%;
+#Legend{
+display: flex inline-block;
+width: 50%;
+margin: auto;
+padding: 45px;
+font-size: 16px;
 }
 
-#Runes,
-#Send,
-#Directions-1,
-#Directions-2 {
-  margin-left: 50px;
-  margin-right: 100px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  text-align: left;
-  align-items: center;
+img {
+  height: 300px;
 }
 
 #Runes {
-  font-size: 30px;
+justify-content: flex-start;
+font-size: 30px;
+font-weight: bold;
+text-align: center;
 }
 
-#Directions-1 {
-  font-size: 16px;
-  text-align: left;
-  font-weight: bold;
-}
-
-#Directions-2 {
-  font-size: 14px;
-  text-align: left;
-}
-
-.runes {
-  margin: 10px;
-  width: 50%;
-  min-width: 700px;
-  height: 150px;
-  align-content: center;
-  border: solid #ffcc02 5px;
-  border-radius: 5px;
-  object-fit: cover;
-}
-
-#Send {
-  font-weight: bold;
-}
-
-#devs {
-  font-weight: bold;
-  margin: 10px;
-}
-
-.container {
+.flex-container {
   display: flex;
   flex-wrap: wrap;
+  width: 75%;
   border-left: solid #ffcc02 5px;
-  padding-left: 50px;
 }
-.Contact {
-  border: solid #ffcc02;
-  border-radius: 5px;
-  margin: 2px;
-  padding: 10px;
+
+.flex-item{
+  margin: 20px;
+}
+
+.rune1{
+  background-image: url(../images/rune1.jpg);
+}
+
+.rune2{
+  background-image: url(../images/rune2.jpg);
+}
+
+.rune3{
+  background-image: url(../images/rune3.jpg);
+}
+
+.rune4{
+  background-image: url(../images/rune4.jpg);
+}
+
+.rune5{
+  background-image: url(../images/rune5.jpg);
+}
+
+.rune1 , .rune2 , .rune3 , .rune4 , .rune5 {
+  border: solid #ffcc02 5px;
+  border-radius: 7px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5%;
+}
+
+
+#Send{
+font-size: 30px;
+font-weight: bold;
+}
+
+.devs{
+  font-weight: bold;
+}
+
+.contact{
   background-color: #ffcc02;
+  border: solid #ffcc02 5px;
+  border-radius: 7px;
   color: #000000;
   font-style: italic;
 }
