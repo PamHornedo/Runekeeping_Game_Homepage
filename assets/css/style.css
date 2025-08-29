@@ -53,41 +53,43 @@ nav {
   align-content: center;
 }
 
-a{
+a {
   padding: 20px;
   text-decoration: none;
   color: #ffcc02;
 }
 
-section {
+#section-1,
+#section-2,
+#section-4 {
   display: flex;
   justify-content: space-between;
 }
 
 .Finn {
-display: flex inline-block;
-flex-direction: column;
-text-align: center;
-width: 50%;
-margin: auto;
-padding: 50px;
+  display: flex inline-block;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding: 50px;
 }
 
-#name{
+#name {
   font-weight: bold;
   font-size: 18px;
 }
 
-#job{
+#job {
   font-size: 16px;
 }
 
-#Legend{
-display: flex inline-block;
-width: 50%;
-margin: auto;
-padding: 45px;
-font-size: 16px;
+#Legend {
+  display: flex inline-block;
+  width: 50%;
+  margin: auto;
+  padding: 45px;
+  font-size: 16px;
 }
 
 img {
@@ -95,44 +97,58 @@ img {
 }
 
 #Runes {
-justify-content: flex-start;
-font-size: 30px;
-font-weight: bold;
-text-align: center;
+  margin-left: 50px;
+  padding: 20px;
+  justify-content: flex-start;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  margin-right: 50px;
+  padding-left: 20px;
   width: 75%;
   border-left: solid #ffcc02 5px;
 }
 
-.flex-item{
-  margin: 20px;
+.flex-item,
+.flex-item2,
+.flex-item3 {
+  margin: 10px;
 }
 
-.rune1{
+.flex-item {
+  flex: 1 1 500px;
+}
+
+.rune1 {
   background-image: url(../images/rune1.jpg);
 }
 
-.rune2{
+.rune2 {
   background-image: url(../images/rune2.jpg);
 }
 
-.rune3{
+.rune3 {
   background-image: url(../images/rune3.jpg);
 }
 
-.rune4{
+.rune4 {
   background-image: url(../images/rune4.jpg);
 }
 
-.rune5{
+.rune5 {
   background-image: url(../images/rune5.jpg);
 }
 
-.rune1 , .rune2 , .rune3 , .rune4 , .rune5 {
+.rune1,
+.rune2,
+.rune3,
+.rune4,
+.rune5 {
   border: solid #ffcc02 5px;
   border-radius: 7px;
   background-size: cover;
@@ -141,20 +157,90 @@ text-align: center;
   padding: 5%;
 }
 
-
-#Send{
-font-size: 30px;
-font-weight: bold;
+#section-3 {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.devs{
+#Directions {
+  margin-left: 50px;
+  padding: 20px;
+  text-wrap: wrap;
+  font-size: 18px;
+  font-weight: bold;
+  width: 250px;
+}
+
+.enter {
+  margin-left: 200px;
+  margin-right: 100px;
+  align-content: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.flex-container2 {
+  margin-right: 50px;
+  padding-left: 20px;
+  width: 75%;
+  border-left: solid #ffcc02 5px;
+}
+
+#container-jr {
+  display: flex;
+  flex-direction: row;
+}
+
+#Send {
+  margin-left: 50px;
+  padding: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
 
-.contact{
+.devs {
+  font-size: 20px;
+  color: #f5f5f5;
+  font-weight: bold;
+}
+
+.contact {
+  padding: 5px;
   background-color: #ffcc02;
   border: solid #ffcc02 5px;
   border-radius: 7px;
   color: #000000;
   font-style: italic;
+}
+
+@media screen and (max-width: 1485px) {
+  .flex-item {
+    flex: 1 1 400px;
+  }
+}
+
+@media screen and (max-width: 1271px) {
+  .flex-item {
+    flex: 1 1 300px;
+  }
+}
+
+@media screen and (max-width: 1055px) {
+  .flex-item {
+    flex: 1 1 200px;
+  }
+}
+
+@media screen and (max-width: 828px) {
+  .flex-item {
+    flex: 1 1 100px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .flex-item {
+    flex: 1 1 60px;
+  }
 }
