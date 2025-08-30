@@ -30,40 +30,54 @@ body {
   padding-bottom: 4rem;
 }
 
+.page-wrapper {
+  max-width: 90%;
+  margin: 3rem auto;
+}
+
 header {
   display: flex;
-  background-color: #000000;
+  background-color: var(--dark);
   justify-content: space-between;
   padding: 25px;
 }
 
 h1 {
-  background-color: #ffcc02;
-  color: #000000;
+  font-family: var(--font-main);
+  background-color: var(--accent);
+  color: var(--dark);
   font-size: 30px;
   padding-left: 10px;
   padding-right: 10px;
-  border: solid #ffcc02;
-  border-radius: 5px;
+  border: solid 5px var(--accent);
+  border-radius: var(--radius);
 }
 
 nav {
-  color: #ffcc02;
+  color: var(--accent);
   font-weight: bold;
   align-content: center;
 }
 
 a {
-  padding: 20px;
+  padding: 15px;
   text-decoration: none;
-  color: #ffcc02;
+  color: var(--accent);
+}
+a:hover {
+  background-color: var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--glow) var(--muted);
+  color: var(--dark);
 }
 
 #section-1,
 #section-2,
+#section-3,
 #section-4 {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 75px;
 }
 
 .Finn {
@@ -72,7 +86,6 @@ a {
   text-align: center;
   width: 50%;
   margin: auto;
-  padding: 50px;
 }
 
 #name {
@@ -96,22 +109,20 @@ img {
   height: 300px;
 }
 
-#Runes {
-  margin-left: 50px;
-  padding: 20px;
-  justify-content: flex-start;
+h2 {
+  width: 25%;
+  margin-right: 20px;
+  margin-left: auto;
   font-size: 30px;
   font-weight: bold;
-  text-align: center;
+  border-right: solid var(--accent) 5px;
+  text-align: left;
 }
 
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 50px;
-  padding-left: 20px;
   width: 75%;
-  border-left: solid #ffcc02 5px;
 }
 
 .flex-item,
@@ -122,6 +133,12 @@ img {
 
 .flex-item {
   flex: 1 1 500px;
+  border: solid var(--accent) 3px;
+  border-radius: var(--radius);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5%;
 }
 
 .rune1 {
@@ -144,48 +161,23 @@ img {
   background-image: url(../images/rune5.jpg);
 }
 
-.rune1,
-.rune2,
-.rune3,
-.rune4,
-.rune5 {
-  border: solid #ffcc02 5px;
-  border-radius: 7px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 5%;
-}
-
-#section-3 {
-  display: flex;
-  justify-content: flex-start;
-  margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
 #Directions {
-  margin-left: 50px;
-  padding: 20px;
+  margin: auto;
+  margin-right: 75px;
+  padding-right: 100px;
   text-wrap: wrap;
   font-size: 18px;
-  font-weight: bold;
-  width: 250px;
+  border: none;
 }
 
 .enter {
-  margin-left: 200px;
-  margin-right: 100px;
-  align-content: center;
-  justify-content: center;
+  width: 75%;
+  padding-right: 350px;
   font-size: 16px;
 }
+
 .flex-container2 {
-  margin-right: 50px;
-  padding-left: 20px;
   width: 75%;
-  border-left: solid #ffcc02 5px;
 }
 
 #container-jr {
@@ -193,25 +185,18 @@ img {
   flex-direction: row;
 }
 
-#Send {
-  margin-left: 50px;
-  padding: 20px;
-  font-size: 30px;
-  font-weight: bold;
-}
-
 .devs {
   font-size: 20px;
-  color: #f5f5f5;
+  color: var(--muted);
   font-weight: bold;
 }
 
 .contact {
   padding: 5px;
-  background-color: #ffcc02;
-  border: solid #ffcc02 5px;
-  border-radius: 7px;
-  color: #000000;
+  background-color: var(--accent);
+  border: solid var(--accent) 5px;
+  border-radius: var(--radius);
+  color: var(--dark);
   font-style: italic;
 }
 
