@@ -67,8 +67,8 @@ a {
 a:hover {
   background-color: var(--accent);
   border-radius: var(--radius);
-  box-shadow: var(--glow) var(--muted);
   color: var(--dark);
+  box-shadow: var(--glow);
 }
 
 #section-1,
@@ -141,6 +141,11 @@ h2 {
   padding: 5%;
 }
 
+.flex-item:hover {
+  box-shadow: var(--glow);
+  transform: scale(1.03);
+}
+
 .rune1 {
   background-image: url(../images/rune1.jpg);
 }
@@ -200,32 +205,56 @@ h2 {
   font-style: italic;
 }
 
-@media screen and (max-width: 1485px) {
-  .flex-item {
-    flex: 1 1 400px;
+@media screen and (max-width: 800px) {
+  body {
+    justify-content: center;
   }
-}
-
-@media screen and (max-width: 1271px) {
-  .flex-item {
-    flex: 1 1 300px;
+  section {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
   }
-}
-
-@media screen and (max-width: 1055px) {
-  .flex-item {
-    flex: 1 1 200px;
+  h1 {
+    font-size: 20px;
   }
-}
-
-@media screen and (max-width: 828px) {
-  .flex-item {
-    flex: 1 1 100px;
+  a {
+    padding: 5px;
   }
-}
-
-@media screen and (max-width: 585px) {
+  a:hover {
+    flex-wrap: nowrap;
+    padding: 2px;
+  }
+  .Finn {
+    width: 100%;
+  }
+  h2 {
+    width: 100%;
+    border-right: none;
+    border-bottom: solid var(--accent) 5px;
+  }
+  main {
+    margin: auto;
+  }
   .flex-item {
-    flex: 1 1 60px;
+    flex-wrap: nowrap;
+  }
+  #Directions {
+    margin: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+  }
+  .enter {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .flex-container2,
+  .contact,
+  .enter {
+    width: 100%;
+    text-align: center;
+  }
+  .contact {
+    font-size: 50%;
   }
 }
