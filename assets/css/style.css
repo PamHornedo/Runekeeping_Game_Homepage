@@ -132,7 +132,7 @@ h2 {
 }
 
 .flex-item {
-  flex: 1 1 500px;
+  flex: 1 1 calc(45% - 1rem);
   border: solid var(--accent) 3px;
   border-radius: var(--radius);
   background-size: cover;
